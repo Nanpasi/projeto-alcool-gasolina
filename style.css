@@ -10,6 +10,8 @@ body {
 
     background-color: darkslateblue;
     transition: ease-in 0.2s;
+
+    flex-wrap: wrap;
 }
 
 /*SEÇÃO PRINCIPAL*/
@@ -96,8 +98,9 @@ body {
     flex-direction: column;
     gap: 20px;
 
-    position: absolute;
-    right: 30px;
+    /**
+    position: absolute;*
+    right: 30px;**/
 }
 
 .botao-cor {
