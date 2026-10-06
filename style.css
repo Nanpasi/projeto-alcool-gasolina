@@ -9,6 +9,7 @@ body {
     align-items: center;
 
     background-color: darkslateblue;
+    transition: ease-in 0.2s;
 }
 
 /*SEÇÃO PRINCIPAL*/
@@ -111,17 +112,29 @@ body {
 
 .botao-cor:hover {
     transform: scale(1.3);
-    transition: transform 0.1s;
+    transition: ease-in-out 0.1s;
 }
 
-#botao-azul {
+#botao-darkslateblue {
     background-color: darkslateblue;
 }
 
-#botao-salmao {
+#botao-dodgerblue {
+    background-color: dodgerblue;
+}
+
+#botao-salmon {
     background-color: salmon;
 }
 
-#botao-dourado {
+#botao-goldenrod {
     background-color: goldenrod;
+}
+
+#botao-yellowgreen {
+    background-color: yellowgreen;
+}
+
+#botao-chocolate {
+    background-color: chocolate;
 }
