@@ -28,8 +28,10 @@ botao_calcular.addEventListener("click", function() {
 
     if (alcool<gasolina) {
         resultado.textContent = "Utilizar ÁLCOOL vai sair mais barato.";
-    } else {
+    } else if(alcool>gasolina) {
         resultado.textContent = "Utilizar GASOLINA vai sair mais barato.";
+    } else {
+        resultado.textContent = "As duas opções tem o MESMO PREÇO."
     }
 });
 
