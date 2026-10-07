@@ -144,3 +144,9 @@ body {
 #botao-chocolate {
     background-color: chocolate;
 }
+
+/*OUTROS*/
+
+.shadow {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
