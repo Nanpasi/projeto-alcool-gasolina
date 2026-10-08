@@ -26,6 +26,18 @@ body {
 
     padding: 30px 70px;
     margin: 30px;
+
+    width: 40%;
+}
+
+/*
+Fazendo o conteúdo principal ocupar mais espaço
+em telas menores que 500px
+*/
+@media(max-width:500px) {
+    #content {
+        width: 60%;
+    }
 }
 
 #campo-entrada {
@@ -103,6 +115,15 @@ body {
     /**
     position: absolute;*
     right: 30px;**/
+}
+
+/*Muda as formatações CSS de #temas se o tamanho da tela for menor que 500px*/
+@media(max-width: 500px) {
+    #temas {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 
 .botao-cor {
