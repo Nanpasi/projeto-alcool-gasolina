@@ -1,5 +1,35 @@
+/*========================= CONFIGURAÇÕES GLOBAIS =========================*/
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /*VARIÁVEIS DE CORES*/
+    --fundo-card: whitesmoke;
+    --borda-card: black;
+
+    --fundo-resultado: rgb(95, 181, 209);
+    --texto-resultado: rgb(28, 28, 228);
+    --borda-resultado: rgb(121, 173, 173);
+
+    --fundo-botao: rgb(12, 105, 198);
+    --fundo-botao-hover: rgb(0, 70, 139);
+    --texto-botao: white;
+
+    --borda-input: black;
+}
+
+/*========================= CONFIGURAÇÕES DE RESPONSIVIDADE =========================*/
+@media(max-width:500px) {
+    /*Fazendo o conteúdo principal ocupar mais espaço*/
+    #content {
+        width: 60%;
+    }
+
+    /*Muda as formatações CSS dos botões de temas*/
+    #temas {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 
 body {
@@ -14,15 +44,15 @@ body {
     flex-wrap: wrap;
 }
 
-/*SEÇÃO PRINCIPAL*/
+/*========================= CARD PRINCIPAL =========================*/
 #content {
     display: flex;
     flex-direction: column;
 
-    border: 4px solid black;
+    border: 4px solid var(--borda-card);
     border-radius: 15px;
 
-    background-color: whitesmoke;
+    background-color: var(--fundo-card);
 
     padding: 30px 70px;
     margin: 30px;
@@ -30,16 +60,7 @@ body {
     width: 40%;
 }
 
-/*
-Fazendo o conteúdo principal ocupar mais espaço
-em telas menores que 500px
-*/
-@media(max-width:500px) {
-    #content {
-        width: 60%;
-    }
-}
-
+/*CAMPO DE INPUT DE TEXTO*/
 #campo-entrada {
     display: flex;
     flex-direction: column;
@@ -49,27 +70,28 @@ em telas menores que 500px
     gap: 10px;
 }
 
+/*ÁREA DE RESULTADO*/
 #resultado {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(95, 181, 209);
-
-    color: rgb(28, 28, 228);
+    background-color: var(--fundo-resultado);
+    color: var(--texto-resultado);
 
     font-size: 18pt;
     font-weight: bold;
 
-    border: 1px solid rgb(121, 173, 173);
+    border: var(--borda-resultado);
     border-radius: 4px;
 
     padding: 14px;
     margin: 15px 0;
 }
 
+/*BOTÃO CALCULAR*/
 #botao-calcular {
-    background-color: rgb(12, 105, 198);
+    background-color: var(--fundo-botao);
 
     border: none;
     border-radius: 5px;
@@ -78,7 +100,7 @@ em telas menores que 500px
 
     margin-right: auto;
 
-    color: white;
+    color: var(--texto-botao);
 
     font-size: 18pt;
     font-weight: bold;
@@ -87,16 +109,17 @@ em telas menores que 500px
 }
 
 #botao-calcular:hover {
-    background-color: rgb(0, 70, 139);
+    background-color: var(--fundo-botao-hover);
     transform: scale(1.05);
 }
 
+/*INPUT DE TEXTO*/
 .entrada {
     padding: 6px;
 
     font-size: 18pt;
 
-    border: 1px solid black;
+    border: 1px solid var(--borda-input);
     border-radius: 4px;
 
     transition: ease-in 0.05s;
@@ -106,7 +129,8 @@ em telas menores que 500px
     transform: scale(1.03);
 }
 
-/*SEÇÃO DE TEMAS*/
+/*========================= SEÇÃO DE TEMAS =========================*/
+/*CONJUNTO DE BOTÕES*/
 #temas {
     display: flex;
     flex-direction: column;
@@ -115,15 +139,6 @@ em telas menores que 500px
     /**
     position: absolute;*
     right: 30px;**/
-}
-
-/*Muda as formatações CSS de #temas se o tamanho da tela for menor que 500px*/
-@media(max-width: 500px) {
-    #temas {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
 }
 
 .botao-cor {
@@ -166,8 +181,9 @@ em telas menores que 500px
     background-color: chocolate;
 }
 
-/*OUTROS*/
+/*========================= OUTROS =========================*/
 
+/*SOMBRA DOS ELEMENTOS*/
 .shadow {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
