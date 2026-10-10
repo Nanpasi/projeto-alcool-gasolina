@@ -17,21 +17,6 @@
     --borda-input: black;
 }
 
-/*========================= CONFIGURAÇÕES DE RESPONSIVIDADE =========================*/
-@media(max-width:500px) {
-    /*Fazendo o conteúdo principal ocupar mais espaço*/
-    #content {
-        width: 60%;
-    }
-
-    /*Muda as formatações CSS dos botões de temas*/
-    #temas {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-}
-
 body {
     display: flex;
 
@@ -186,4 +171,20 @@ body {
 /*SOMBRA DOS ELEMENTOS*/
 .shadow {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*========================= CONFIGURAÇÕES DE RESPONSIVIDADE =========================*/
+@media(max-width:500px) {
+    /*Fazendo o conteúdo principal ocupar mais espaço*/
+    #content {
+        width: 60%;
+    }
+
+    /*Muda as formatações CSS dos botões de temas*/
+    #temas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
