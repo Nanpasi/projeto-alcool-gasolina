@@ -1,5 +1,5 @@
 # Projeto "Álcool ou Gasolina"
-<img width="916" height="619" alt="image" src="https://github.com/user-attachments/assets/41a802a2-55d1-4f18-ad6a-165c4dcfb8b6" />
+<img src="assets/demo.gif" width="800">
 
 # Sobre
 
