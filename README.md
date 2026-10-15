@@ -1,5 +1,5 @@
 # Projeto "Álcool ou Gasolina"
-<img src="assets/demo.gif" width="800">
+<img src="assets/img/demo.gif" width="800">
 
 # ℹ️ Sobre
 
